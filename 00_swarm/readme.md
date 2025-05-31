@@ -1,18 +1,41 @@
-**Summary: OpenAI Agents SDK & Swarm Framework**
-OpenAI's Swarm was an experimental framework aimed at lightweight and ergonomic orchestration of multi-agent systems. It introduced key concepts like Agents, which are task-specific entities with tools and instructions, and Handoffs, which enable seamless transfer of control between agents. Swarm focused on flexibility and simplicity, making it easy to build scalable and testable AI systems.
+# ✨ Summary: OpenAI Agents SDK & Swarm Framework
 
-Building on these ideas, OpenAI released the Agents SDK, a production-ready toolkit that enhances multi-agent coordination. It allows developers to orchestrate workflows across multiple specialized agents effectively.
+OpenAI's *Swarm* was an **experimental framework** designed for the **lightweight and ergonomic orchestration** of multi-agent systems. It introduced two core concepts:
 
-The Agents SDK also aligns with several design patterns proposed by Anthropic, including:
+- **Agents** – Task-specific entities equipped with tools and instructions.  
+- **Handoffs** – Mechanisms that enable *seamless transfer of control* between agents.
 
-- Prompt Chaining: Breaking tasks into step-by-step workflows.
+Swarm focused on **simplicity, flexibility, and testability**, making it easier for developers to build scalable and collaborative AI systems.
 
-- Routing: Directing tasks to the most suitable agent.
+---
 
-- Parallelization: Running subtasks concurrently.
+## 🚀 OpenAI Agents SDK
 
-- Orchestrator-Workers: Central agent assigns work to specialized agents.
+Building on Swarm’s foundational concepts, OpenAI introduced the **Agents SDK** — a **production-ready toolkit** that enhances multi-agent coordination. It enables developers to orchestrate workflows involving multiple specialized agents efficiently.
 
-- Evaluator-Optimizer: Continuous improvement through evaluation and feedback.
+---
 
-Together, these patterns enable the creation of robust, collaborative AI systems capable of handling complex tasks efficiently.
+## 🧩 Alignment with Anthropic’s Agent Design Patterns
+
+The Agents SDK supports several agent orchestration patterns proposed by [Anthropic](https://www.anthropic.com/engineering/building-effective-agents):
+
+- 🔗 **Prompt Chaining**  
+  *Breaks complex tasks into a sequence of simpler, manageable steps.*
+
+- 🚦 **Routing**  
+  *Directs tasks to the most suitable agent based on task type or context.*
+
+- ⚙️ **Parallelization**  
+  *Executes multiple subtasks concurrently for greater efficiency.*
+
+- 🧠 **Orchestrator-Workers**  
+  *An orchestrator agent delegates subtasks to specialized worker agents.*
+
+- 📈 **Evaluator-Optimizer**  
+  *Implements feedback loops to evaluate and improve agent performance.*
+
+---
+
+Together, these patterns enable the development of **robust, intelligent, and collaborative multi-agent AI systems** capable of handling complex tasks with efficiency and precision.
+
+---
