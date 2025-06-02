@@ -19,4 +19,8 @@ cd hello_agent
 uv add openai-agents python-dotenv
 uv run main.py
 ```
+# **_Configuring LLM Providers Other Than OpenAI_**
 
+**_The SDK uses OpenAI as the default, but you can configure Google Gemini at three levels:._**
+
+---
