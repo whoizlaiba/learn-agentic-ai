@@ -11,4 +11,4 @@ A smart AI assistant that helps with financial calculations like budgeting, loan
 ## Run the script:
 
 ```bash
-uv run main.py                    like this also write for my finance cal 
+uv run main.py                    
