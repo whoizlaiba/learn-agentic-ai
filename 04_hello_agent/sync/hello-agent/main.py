@@ -1,4 +1,3 @@
-
 # Import required modules
 from dotenv import load_dotenv  # type: ignore # Loads environment variables from a .env file
 import os  # Provides access to operating system functionality like environment variables
