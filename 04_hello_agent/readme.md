@@ -11,7 +11,7 @@
 ```env
 GEMINI_API_KEY=your_actual_api_key_here
 ```
-### Initialize and install dependencies:
+### **_Initialize and install dependencies:_**
 
 ```bash
 uv init hello_agent
