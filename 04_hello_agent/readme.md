@@ -56,3 +56,78 @@ if __name__ == "__main__":
     asyncio.run(main())
 
 ```
+
+---
+
+### **_2. Run Level Configuration_**
+
+Use a RunConfig to specify the Gemini client and model during a run:
+
+```env
+from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel
+from agents.run import RunConfig
+
+gemini_api_key = "your_api_key_here"
+
+external_client = AsyncOpenAI(
+    api_key=gemini_api_key,
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+)
+
+model = OpenAIChatCompletionsModel(
+    model="gemini-2.0-flash",
+    openai_client=external_client,
+)
+
+config = RunConfig(
+    model=model,
+    model_provider=external_client,
+    tracing_disabled=True,
+)
+
+agent = Agent(name="Assistant", instructions="You are a helpful assistant")
+
+result = Runner.run_sync(agent, "Hello, how are you.", run_config=config)
+print(result.final_output)
+
+
+```
+
+---
+
+### **_3. Global Level Configuration_**
+
+Set Gemini client globally for all agents and runs:
+
+```env
+from agents import Agent, Runner, AsyncOpenAI, set_default_openai_client, set_tracing_disabled, set_default_openai_api
+
+gemini_api_key = "your_api_key_here"
+
+set_tracing_disabled(True)
+set_default_openai_api("chat_completions")
+
+external_client = AsyncOpenAI(
+    api_key=gemini_api_key,
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+)
+
+set_default_openai_client(external_client)
+
+agent = Agent(name="Assistant", instructions="You are a helpful assistant", model="gemini-2.0-flash")
+
+result = Runner.run_sync(agent, "Hello")
+print(result.final_output)
+
+
+```
+
+
+---
+
+## 🔗 Useful Links
+
+- 📘 [OpenAI Agents SDK Documentation](https://openai.github.io/openai-agents-python/)
+- 🧠 [Supported Models for OpenAI Agents](https://openai.github.io/openai-agents-python/models/)
+- 🤖 [Google Gemini API (OpenAI-Compatible)](https://ai.google.dev/gemini-api/docs/openai)
+
