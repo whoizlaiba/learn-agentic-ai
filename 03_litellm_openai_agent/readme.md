@@ -11,19 +11,19 @@ This repository provides a Jupyter Notebook (`03_Litellm_agent_sdk.ipynb`) that 
 
 ## 📦 Installation
 
-Install required packages:
+1. Install required packages:
 
 ```python
 !pip install -Uq openai-agents "openai-agents[litellm]" 
 ```
-Enable async support:
+2. Enable async support:
 
 
 ```python
 import nest_asyncio
 nest_asyncio.apply()
 ```
-Set up your Gemini API key (in Google Colab):
+3. Set up your Gemini API key (in Google Colab):
 
 
 ```python
