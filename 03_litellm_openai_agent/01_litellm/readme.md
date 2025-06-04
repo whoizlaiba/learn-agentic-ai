@@ -75,13 +75,13 @@ response = completion(model="claude-2", messages=messages)
 ```
 
 ### **For VertexAI's Gemini**
-```
+```bash
 response = completion(model="gemini-2.0", messages=messages)
 ```
 
 ### **4. Handling Streaming Responses:**
 LiteLLM supports streaming responses, allowing you to process outputs in real-time. To enable streaming:
-```
+```bash
 response = completion(model="gpt-3.5-turbo", messages=messages, stream=True)
 for part in response:
     print(part['choices'][0]['delta'].get('content', ''), end='')
@@ -91,7 +91,7 @@ for part in response:
 
 ### **5. Exception Handling:**
 LiteLLM maps exceptions across all supported providers to OpenAI’s exception types, enabling uniform error handling:
-```
+```bash
 from openai.error import OpenAIError
 from litellm import completion
 import os
@@ -107,7 +107,7 @@ except OpenAIError as e:
 
 ### **6. Logging and Observability:**
 LiteLLM provides pre-defined callbacks to send data to logging and monitoring tools like Lunary, Langfuse, and Helicone. To set up logging:
-```
+```bash
 from litellm import completion
 import os
 
@@ -122,7 +122,7 @@ response = completion(model="gpt-3.5-turbo", messages=messages)
 
 ### **Fallback Example:**
 
-```
+```bash
 from litellm import completion, exceptions
 import os
 
