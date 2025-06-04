@@ -48,8 +48,8 @@ The notebook includes the following steps:
 - Runs the agent synchronously using Runner.run_sync.
 
 ## 🧠 Key Code Example
-python
-```
+
+```python
 from agents import Agent, Runner, function_tool
 from agents.extensions.models.litellm_model import LitellmModel
 
