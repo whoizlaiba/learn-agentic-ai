@@ -74,7 +74,7 @@ For other providers, such as Anthropic’s Claude or VertexAI’s Gemini, simply
 response = completion(model="claude-2", messages=messages)
 ```
 
-### *For VertexAI's Gemini*
+## **For VertexAI's Gemini**
 ```
 response = completion(model="gemini-2.0", messages=messages)```
 
