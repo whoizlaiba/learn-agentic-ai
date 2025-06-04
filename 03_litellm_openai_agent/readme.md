@@ -18,15 +18,15 @@ Install required packages:
 ```
 Enable async support:
 
-python
-```
+
+```python
 import nest_asyncio
 nest_asyncio.apply()
 ```
 Set up your Gemini API key (in Google Colab):
 
-python
-```
+
+```python
 from google.colab import userdata
 GEMINI_API_KEY = userdata.get("GEMINI_API_KEY")
 ```
@@ -70,8 +70,8 @@ result = Runner.run_sync(agent, "What's the weather in Tokyo?")
 print(result.final_output)
 ```
 ## 💬 Sample Output
-arduino
-```
+
+```arduino
 Skies now partly clear,  
 Seventy degrees in Tokyo,  
 Gentle breeze abounds.
