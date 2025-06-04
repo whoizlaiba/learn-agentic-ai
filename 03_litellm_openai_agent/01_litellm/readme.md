@@ -41,3 +41,41 @@ Ensure you have Python installed, then install LiteLLM:
 
 ```bash
 pip install litellm
+```
+
+### **2. Setting Up Environment Variables:**
+
+To authenticate with different LLM providers, set your API keys as environment variables. For example:
+
+```bash
+import os
+os.environ["OPENAI_API_KEY"] = "your_openai_api_key"
+os.environ["ANTHROPIC_API_KEY"] = "your_anthropic_api_key"
+# Add other keys as needed
+```
+
+### **3. Making a Completion Request:**
+
+With LiteLLM, you can make completion requests to various models using a consistent interface. Here’s how to interact with OpenAI’s GPT-3.5-Turbo:
+
+```bash
+from litellm import completion
+messages = [{"role": "user", "content": "Hello, how are you?"}]
+response = completion(model="gpt-3.5-turbo", messages=messages)
+print(response['choices'][0]['message']['content'])
+```
+
+
+
+For other providers, such as Anthropic’s Claude or VertexAI’s Gemini, simply change the model parameter accordingly:
+### **For Anthropic's Claude**
+
+```bash
+response = completion(model="claude-2", messages=messages)
+```
+
+### **For VertexAI's Gemini**
+```
+response = completion(model="gemini-2.0", messages=messages)```
+
+
