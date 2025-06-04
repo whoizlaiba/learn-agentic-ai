@@ -14,42 +14,42 @@ This repository provides a Jupyter Notebook (`03_Litellm_agent_sdk.ipynb`) that 
 Install required packages:
 
 ```python
-!pip install -Uq openai-agents "openai-agents[litellm]"
+!pip install -Uq openai-agents "openai-agents[litellm]" 
+```
 Enable async support:
 
 python
-Copy
-Edit
+```
 import nest_asyncio
 nest_asyncio.apply()
+```
 Set up your Gemini API key (in Google Colab):
 
 python
-Copy
-Edit
+```
 from google.colab import userdata
 GEMINI_API_KEY = userdata.get("GEMINI_API_KEY")
-📓 Notebook Overview
+```
+##  📓 Notebook Overview
 The notebook includes the following steps:
 
-Install SDK: Installs openai-agents and LiteLLM integration.
+1. Install SDK: Installs openai-agents and LiteLLM integration.
 
-Enable Async Support: Uses nest_asyncio for compatibility.
+2. Enable Async Support: Uses nest_asyncio for compatibility.
 
-Create Conversational Agent:
+3. Create Conversational Agent:
 
-Uses LiteLLM with the Google Gemini model.
+- Uses LiteLLM with the Google Gemini model.
 
-Defines a function tool (get_weather) to simulate weather retrieval.
+- Defines a function tool (get_weather) to simulate weather retrieval.
 
-Configures the agent to respond only in haikus.
+- Configures the agent to respond only in haikus.
 
-Runs the agent synchronously using Runner.run_sync.
+- Runs the agent synchronously using Runner.run_sync.
 
-🧠 Key Code Example
+## 🧠 Key Code Example
 python
-Copy
-Edit
+```
 from agents import Agent, Runner, function_tool
 from agents.extensions.models.litellm_model import LitellmModel
 
@@ -68,25 +68,26 @@ agent = Agent(
 
 result = Runner.run_sync(agent, "What's the weather in Tokyo?")
 print(result.final_output)
-💬 Sample Output
+```
+## 💬 Sample Output
 arduino
-Copy
-Edit
+```
 Skies now partly clear,  
 Seventy degrees in Tokyo,  
 Gentle breeze abounds.
-🚀 Usage Instructions
-Open the notebook 03_Litellm_agent_sdk.ipynb in Jupyter or Colab.
+```
+## 🚀 Usage Instructions
+1. Open the notebook 03_Litellm_agent_sdk.ipynb in Jupyter or Colab.
 
-Set your Gemini API key.
+2. Set your Gemini API key.
 
-Run the cells step-by-step.
+3. Run the cells step-by-step.
 
-Modify the model or query as desired.
+4. Modify the model or query as desired.
 
-⚠️ Notes
-get_weather is a placeholder—replace it with real weather API calls for production.
+## ⚠️ Notes
+- get_weather is a placeholder—replace it with real weather API calls for production.
 
-Tracing is disabled (set_tracing_disabled(True)) to keep output clean—enable it for debugging.
+- Tracing is disabled (set_tracing_disabled(True)) to keep output clean—enable it for debugging.
 
-Always store your API key securely (avoid hardcoding).
+- Always store your API key securely (avoid hardcoding).
