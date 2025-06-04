@@ -1,7 +1,7 @@
 # **_LiteLLM Python SDK_**
 
 **Watch:** *LiteLLM - One Unified API for all LLMs*  
-**Repo** | **Docs** | **Colab**
+**[Repo](https://example.com)** | **[Docs](https://example.com)**| **[Colab](https://example.com)**
 
 ---
 
