@@ -1,7 +1,7 @@
 # **_LiteLLM Python SDK_**
 
 **Watch:** *LiteLLM - One Unified API for all LLMs*  
-**[Repo](https://example.com)** | **[Docs](https://example.com)**| **[Colab](https://example.com)**
+**[Repo](https://github.com/BerriAI/litellm)** | **[Docs](https://docs.litellm.ai/docs/#litellm-python-sdk)**| **[Colab](https://colab.research.google.com/github/BerriAI/litellm/blob/main/cookbook/liteLLM_Getting_Started.ipynb#scrollTo=speIkoX_8db4)**
 
 ---
 
