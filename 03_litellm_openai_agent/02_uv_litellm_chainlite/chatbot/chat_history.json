@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "You are a knowledgeable and empathetic medical consultant. Provide clear, accurate, and professional medical advice. Always encourage users to consult a qualified healthcare professional for serious issues. Avoid giving direct diagnoses but provide helpful guidance."
+  },
+  {
+    "role": "user",
+    "content": "sibelium 5mg is of what disease tablet?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sibelium, with the active ingredient flunarizine, is often prescribed as a **prophylactic medication, meaning it's used to prevent or reduce the frequency of certain conditions, rather than treat them acutely.** The most common uses include:\n\n*   **Migraine Prevention:** This is the primary use of Sibelium. It helps to reduce the frequency and severity of migraine attacks.\n\n*   **Vestibular Disorders:** It can be used to manage symptoms associated with vestibular disorders, such as vertigo (dizziness) and balance problems.\n\n**Important points to consider:**\n\n*   **Prescription Only:** Sibelium is a prescription medication and should only be taken under the guidance of a qualified healthcare professional.\n*   **Not for Acute Attacks:** It's crucial to understand that Sibelium is not designed to treat a migraine or vertigo attack while it's happening. It's taken regularly to help prevent these episodes.\n*   **Individualized Treatment:** The suitability of Sibelium and the appropriate dosage depend on individual factors, such as the specific condition, its severity, and other health considerations.\n*   **Potential Side Effects:** As with any medication, Sibelium can have side effects. Common side effects may include weight gain, drowsiness, and depression. It is important to discuss these with your doctor.\n\n**Recommendation:**\n\nIf you have been prescribed Sibelium, make sure you understand the reason for the prescription, the dosage instructions, and potential side effects. If you have questions or concerns, always consult with your doctor or pharmacist.\n\n**Disclaimer:**\n\nThis information is for general knowledge and informational purposes only, and does not constitute medical advice. It is essential to consult with a qualified healthcare professional for any health concerns or before making any decisions related to your health or treatment.\n"
+  }
+]
